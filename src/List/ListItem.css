@@ -1,0 +1,38 @@
+.list-item{
+    display:grid;
+    width: 80%;
+    height: 150px;
+    margin:0 auto;
+    grid-template-columns: 1fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 100%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-bottom: 1px solid transparent;
+}
+.list-item:last-child{
+    border-bottom: 1px solid black;
+}
+
+.list-item > .btn > button{
+    cursor: pointer;
+    box-shadow: none;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    transition: 0.5s color, background-color ease-in-out;
+    -webkit-transition: 0.5s color, background-color ease-in-out;
+    -moz-transition: 0.5s color, background-color ease-in-out;
+    -ms-transition: 0.5s color, background-color ease-in-out;
+    -o-transition: 0.5s color, background-color ease-in-out;
+}
+.list-item > .btn > button:hover{
+    background-color: white;
+    color: black;
+}
+.list-item > .btn > button:disabled{
+    cursor: not-allowed;
+    background-color: gray;
+}
